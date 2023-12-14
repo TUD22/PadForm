@@ -1,0 +1,4 @@
+imie: 
+nzawisko: 
+wiek: 16
+Doœwiadczenie: 
