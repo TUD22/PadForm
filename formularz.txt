@@ -1,4 +1,5 @@
 imie: 
 nzawisko: 
-wiek: 16
+wiek: 1
 Doœwiadczenie: 
+P³eæ: Kobieta
