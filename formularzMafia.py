@@ -1,6 +1,10 @@
 from tkinter import *
 from tkinter import messagebox
 
+plec=''
+
+prawojazdy=''
+
 class Window(Tk):
     def __init__(self):
         super().__init__()
@@ -33,15 +37,17 @@ class Napis(Label):
         super().__init__(text=text, font=('Arial', rozmiar))
 
 class Radio(Radiobutton):
-    def __init__(self, text, value, var):
+    plec=''
+    def __init__(self, text, var, value):
         self.text=text
-        super().__init__(text=text, value=value, command=self.wybor, variable=var)
+        self.var=var
+        super().__init__(text=text, command=self.wybor, variable=var ,value=value)
     def wybor(self):
-        global plec
-        plec=self.text
-        print(plec)
+        
+        print(self.var)
+   
 
-plec =''
+
 
 okno=Window()
 send=Przycisk('Wyślij')
@@ -61,9 +67,9 @@ pseudonim=Input()
 LPseudonim=Napis('Twoje imię w gangu')
 Lpraca=Napis('Gdzie teraz pracujesz?')
 praca=Input()
-m=Radio('Mężczyzna' ,'M', plec)
-k=Radio('Kobieta', 'K', plec)
-
+m=Radio('Mężczyzna', plec, 'M')
+k=Radio('Kobieta', plec, 'K')
+tTprawojazdy=Radio('Tak', prawojazdy, 'tak')
 
 
 Header.grid(column=1, row=0, columnspan=4)

@@ -2,4 +2,4 @@ imie:
 nzawisko: 
 wiek: 1
 Doœwiadczenie: 
-P³eæ: Kobieta
+P³eæ: 
